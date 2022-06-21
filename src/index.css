@@ -1,0 +1,79 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background-color: black;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  #root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stopwatch {
+    font-size: 15vw;
+  }
+
+  .dark {
+    color: black;
+    background: white;
+  }
+
+  .stopwatch-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .dark .theme-button:after {
+    color: black;
+  }
+
+  .theme-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    max-width: 10px;
+    height: 20px;
+    background: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    transition: 0.15s;
+    overflow: hidden;
+  }
+
+  .theme-button:hover:after {
+    opacity: 1;
+  }
+
+  .theme-button:hover {
+    max-width: 100px;
+  }
+
+  .theme-button::after {
+    content: 'CHANGE THEME';
+    color: white;
+    font-size: 10px;
+    opacity: 0;
+    transition: 0.15s;
+  }
+
+  .flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
